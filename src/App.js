@@ -1,25 +1,29 @@
 import logo from './logo.svg';
 import './App.css';
+import Movies from './Movies.js'
+import React from 'react'
+class App extends React.Component{
+  state = {
+    showMovies: true
+  }
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  onClick = () => {
+    this.setState({
+      showMovies: !this.state.showMovies
+    })
+  }
+  render(){
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2 onClick={this.onClick}> React Lifecycle Methods</h2>
+        </header>    
+          {this.state.showMovies ? <Movies prop2="nick" name="nick" test="hello world"/> : null }
+
+      </div>
+    ); 
+  }
 }
 
 export default App;

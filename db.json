@@ -1,0 +1,24 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Finding Nemo",
+      "imgURL": "https://upload.wikimedia.org/wikipedia/en/2/29/Finding_Nemo.jpg"
+    },
+    {
+      "title": "Finding Dory",
+      "imgURL": "https://upload.wikimedia.org/wikipedia/en/6/63/Prisoners2013Poster.jpg",
+      "id": 2
+    },
+    {
+      "title": "One Man and His Cow",
+      "imgURL": "https://upload.wikimedia.org/wikipedia/en/thumb/2/27/310_to_Yuma_%282007_film%29.jpg/220px-310_to_Yuma_%282007_film%29.jpg",
+      "id": 3
+    },
+    {
+      "title": "afdsfd",
+      "imgURL": "https://images-na.ssl-images-amazon.com/images/I/51py13PzjaL._SY445_.jpg",
+      "id": 4
+    }
+  ]
+}
